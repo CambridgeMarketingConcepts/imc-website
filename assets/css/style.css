@@ -2310,7 +2310,6 @@ section {
 }
 
 .hiring .info-box {
-  color: #444444;
   background: #fafbff;
   padding: 30px;
 }
@@ -2340,7 +2339,7 @@ section {
   border-top: 3px solid var(--light-blue);
   border-bottom: 3px solid var(--light-blue);
   padding: 30px;
-  background: #fff;
+  background: #fafbff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
