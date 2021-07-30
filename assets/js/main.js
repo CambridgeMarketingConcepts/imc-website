@@ -1,9 +1,9 @@
 /**
-* Template Name: FlexStart - v1.4.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Website Name: Ironwood Marketing Concepts
+* URL: https://ironwoodmarketing.com/
+* Author: Harris Khawar -> https://harriskhawar.com/
 */
+
 (function() {
   "use strict";
 

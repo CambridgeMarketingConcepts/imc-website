@@ -1,3 +1,9 @@
+/**
+* Website Name: Ironwood Marketing Concepts
+* URL: https://ironwoodmarketing.com/
+* Author: Harris Khawar -> https://harriskhawar.com/
+*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -7,6 +13,7 @@
   --primary-purple: #460054;
   --accent-purple: #6a207d;
   --accent-grey: #c6c4c7;
+  --secondary-blue: #012970;
 }
 
 body {
@@ -89,21 +96,21 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0;
   color: var(--primary-purple);
   text-transform: uppercase;
 }
 
-.section-header p {
+.section-header h3 {
   margin: 10px 0 0 0;
   padding: 0;
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: var(--accent-purple);
 }
 
 @media (max-width: 768px) {
@@ -118,10 +125,9 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
   min-height: 40px;
   margin-top: 82px;
-  color: #fff;
+  color: var(--accent-purple);
 }
 
 @media (max-width: 992px) {
@@ -133,6 +139,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 500;
+  color: var(--primary-purple);
 }
 
 .breadcrumbs ol {
@@ -145,7 +152,7 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #fff;
+  color: var(--accent-purple);
   transition: 0.3s;
 }
 
@@ -234,7 +241,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -265,9 +272,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 8px 20px 8px 20px;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--accent-purple);
   white-space: nowrap;
@@ -291,7 +298,7 @@ section {
   color: var(--accent-purple);
   font-size: 15px;
   border: 2px solid var(--accent-purple);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .navbar .getstarted:hover {
@@ -366,7 +373,7 @@ section {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #012970;
+  color: var(--secondary-blue);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -421,7 +428,7 @@ section {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -563,13 +570,14 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  background-color: #f6f9ff;
+  /* background-color: #f6f9ff; */
+  background-image: linear-gradient(#fee8e7,#d4bddf);
   padding: 40px;
 }
 
 .about h3 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--primary-purple);
   text-transform: uppercase;
 }
@@ -577,7 +585,7 @@ section {
 .about h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #012970;
+  color: var(--accent-purple);
 }
 
 .about p {
@@ -588,11 +596,11 @@ section {
 .about .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
-  border-radius: 4px;
+  border-radius: 40px;
   transition: 0.5s;
   color: #fff;
-  background: var(--primary-purple);
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  color:  var(--primary-purple);
+  border: 2px solid var(--primary-purple);
 }
 
 .about .btn-read-more span {
@@ -616,6 +624,7 @@ section {
 # Values
 --------------------------------------------------------------*/
 .values .box {
+  background-image: linear-gradient(#fee8e7,#d4bddf);
   padding: 30px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
   text-align: center;
@@ -631,7 +640,7 @@ section {
 
 .values .box h3 {
   font-size: 24px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -671,7 +680,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #0b198f;
+  color: var(--secondary-blue);
 }
 
 .counts .count-box p {
@@ -679,6 +688,7 @@ section {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+  color: var(--accent-purple);
 }
 
 /*--------------------------------------------------------------
@@ -693,7 +703,7 @@ section {
 
 .features .feature-box h3 {
   font-size: 18px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
   margin: 0;
 }
@@ -718,7 +728,7 @@ section {
 }
 
 .features .feture-tabs h3 {
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
@@ -739,7 +749,7 @@ section {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 600;
-  color: #012970;
+  color: var(--secondary-blue);
   padding: 12px 0;
   margin-right: 25px;
   margin-bottom: -2px;
@@ -755,7 +765,7 @@ section {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .features .feture-tabs .tab-content i {
@@ -770,7 +780,7 @@ section {
 }
 
 .features .feature-icons h3 {
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
@@ -791,7 +801,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .features .feature-icons .content .icon-box i {
@@ -1196,12 +1206,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -1484,7 +1494,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .team .member .member-info span {
@@ -1576,7 +1586,7 @@ section {
 
 .recent-blog-posts .post-box .post-title {
   font-size: 24px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
   margin-bottom: 18px;
   position: relative;
@@ -1622,7 +1632,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -1758,7 +1768,7 @@ section {
 }
 
 .blog .entry .entry-title a {
-  color: #012970;
+  color: var(--secondary-blue);
   transition: 0.3s;
 }
 
@@ -1851,7 +1861,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #012970;
+  background-color: var(--secondary-blue);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1931,7 +1941,7 @@ section {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .blog .blog-author .social-links {
@@ -1986,7 +1996,7 @@ section {
 
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .blog .blog-comments .comment h5 .reply i {
@@ -2049,7 +2059,7 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #012970;
+  background-color: var(--secondary-blue);
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
@@ -2073,7 +2083,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: #012970;
+  color: var(--secondary-blue);
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -2099,7 +2109,7 @@ section {
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #012970;
+  color: var(--secondary-blue);
   position: relative;
 }
 
@@ -2156,7 +2166,7 @@ section {
 }
 
 .blog .sidebar .categories ul a {
-  color: #012970;
+  color: var(--secondary-blue);
   transition: 0.3s;
 }
 
@@ -2186,7 +2196,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a {
-  color: #012970;
+  color: var(--secondary-blue);
   transition: 0.3s;
 }
 
@@ -2238,6 +2248,224 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Hiring
+--------------------------------------------------------------*/
+
+.hiring-main {
+  background: url(../img/hero-bg.png) top center no-repeat;
+}
+
+.hiring .open-positions h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-purple);
+}
+
+.hiring .open-positions ul {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+}
+
+.hiring .open-positions li{
+  font-size: 14px;
+  color: var(--secondary-blue);
+}
+
+.hiring .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hiring .info i {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: var(--accent-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hiring .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--secondary-blue);
+}
+
+.hiring .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--secondary-blue);
+}
+
+.hiring .info-box {
+  color: #444444;
+  background: #fafbff;
+  padding: 30px;
+}
+
+.hiring .info-box i {
+  font-size: 38px;
+  line-height: 0;
+  color: var(--primary-purple);
+}
+
+.hiring .info-box h3 {
+  font-size: 20px;
+  color: var(--secondary-blue);
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.hiring .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.hiring .php-email-form {
+  width: 100%;
+  border-top: 3px solid var(--light-blue);
+  border-bottom: 3px solid var(--light-blue);
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.hiring .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.hiring .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.hiring .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.hiring .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.hiring .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.hiring .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.hiring .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.hiring .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.hiring .php-email-form label {
+  color: var(--secondary-blue);
+  padding-bottom: 8px;
+}
+
+.hiring .php-email-form input, .hiring .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.hiring .php-email-form input:focus, .hiring .php-email-form textarea:focus {
+  border-color: var(--light-blue);
+}
+
+
+.hiring .php-email-form input {
+  height: 44px;
+}
+
+.hiring .php-email-form .form-check-input {
+  height: 1rem;
+}
+
+.hiring .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.hiring .php-email-form button {
+  background: none;
+  border: 2px solid var(--accent-purple);
+  padding: 12px 34px;
+  color: var(--primary-purple);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.hiring .php-email-form button:hover {
+  background: var(--primary-purple);
+  color: #fff;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -2258,7 +2486,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .footer .footer-newsletter form {
@@ -2312,6 +2540,7 @@ section {
 
 .footer .footer-top .footer-info {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .footer .footer-top .footer-info .logo {
@@ -2320,7 +2549,7 @@ section {
 }
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 150px;
   margin-right: 6px;
 }
 
@@ -2328,7 +2557,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: var(--secondary-blue);
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -2340,23 +2569,24 @@ section {
   font-family: "Nunito", sans-serif;
 }
 
+
 .footer .footer-top .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: var(--primary-purple);
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #012970;
+  color: var(--accent-purple);
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #012970;
+  color: var(--secondary-blue);
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -2407,12 +2637,12 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
+  color: var(--secondary-blue);
 }
 
 .footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #012970;
+  color: var(--secondary-blue);
 }
